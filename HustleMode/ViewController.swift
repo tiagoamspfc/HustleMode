@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
     }
     
-    
+    //Testing changes 
     @IBAction func startRocket(_ sender: UIButton) {
         darkBlueBg.isHidden = true
         powerBtn.isHidden = true
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         player.play()
         
         UIView.animate(withDuration: 2.3, animations: {
-            self.rocketLaunch.frame = CGRect(x:  0, y: 0, width: 414, height: 736)
+            self.rocketLaunch.frame = CGRect(x:  0, y: 50, width: 414, height: 736)
         }) { (finished) in
             self.onLbl.isHidden = false
         }
